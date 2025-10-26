@@ -72,7 +72,7 @@ data/Endoscopy-esophagus/
 └─ no-esophagus/ # negative class images
 
 ### Q: How do I hide IPs in Gradio logs?
-A: Use `demo.launch(quiet=True, show_api=False)` or `demo.launch(quiet=False)` and avoid committing terminal screenshots/logs.
+A: Use `.launch(quiet=True, show_api=False)` or `.launch(quiet=False)` and avoid committing terminal screenshots/logs.
 
 ### Q: Can I run this on GPU?
 A: 
