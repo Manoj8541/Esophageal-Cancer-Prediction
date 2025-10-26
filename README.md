@@ -65,12 +65,6 @@ A: V2 models are more compatible with modern TensorFlow/Keras and offer strong a
 ### Q: Why do I get the “PyDataset/fit workers” warning in Keras 3.x?
 A: In Keras 3.x, the arguments `workers`, `use_multiprocessing`, and `max_queue_size` passed to `model.fit()` are ignored. You can safely ignore this warning or remove those parameters from `fit()`. If you need parallelism, configure it in the input pipeline (e.g., `tf.data`) rather than via `fit()`.
 
-### Q: What dataset structure is expected?
-A:
-data/Endoscopy-esophagus/                                                                                                                                                                       
-├─ esophagus/ # positive class images                                                                                                                                                   
-└─ no-esophagus/ # negative class images
-
 ### Q: How do I hide IPs in Gradio logs?
 A: Use `.launch(quiet=True, show_api=False)` or `.launch(quiet=False)` and avoid committing terminal screenshots/logs.
 
